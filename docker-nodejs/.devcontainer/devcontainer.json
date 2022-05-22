@@ -24,7 +24,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"formulahendry.auto-rename-tag",
+    "formulahendry.auto-rename-tag",
     "eamodio.gitlens",
     "garaemon.oneline-scroll",
     "esbenp.prettier-vscode",

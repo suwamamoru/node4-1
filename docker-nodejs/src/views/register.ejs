@@ -1,20 +1,20 @@
 <%- include('partials/navigation') %> 
-<form action="" method="post">
+<form action="/user/register" method="post">
   <div>
     <label>name</label>
-    <input type="text" name="name">
+    <input type="text" name="username" required>
   </div>
   <div>
     <label>email</label>
-    <input type="text" name="email">
+    <input type="text" name="email" required>
   </div>
   <div>
     <label>password</label>
-    <input type="text" name="password">
+    <input type="text" name="password" required>
   </div>
   <div>
     <label>password confirm</label>
-    <input type="text" name="password-confirm">
+    <input type="text" name="confirmPassword" required>
   </div>
   <div>
     <input type="submit" value="Register">
