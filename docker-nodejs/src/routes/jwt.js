@@ -2,7 +2,7 @@
 
 const express = require('express'),
       router = express.Router(),
-      usersController = require('../controllers/usersController');
+      usersController = require('../controllers/jwtController');
 
 router.post('/login', usersController.jwtAuthenticate);
 router.use(usersController.verifyJWT);

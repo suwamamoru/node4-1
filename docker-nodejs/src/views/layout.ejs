@@ -10,7 +10,12 @@
         <% if(flashMessages.success) { %>
           <%= flashMessages.success %>
         <% } else if(flashMessages.error) { %>
-          エラー：<%= flashMessages.error %>
+          エラー：
+          <% flashMessages.error.forEach(e => { %>
+            <ul>
+              <li><%= e %></li>
+            </ul>
+          <% }) %>
         <% } %>
       <% } %>
     </div>

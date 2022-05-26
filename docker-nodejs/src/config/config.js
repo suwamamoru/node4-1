@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   development: {
     username: process.env.MYSQL_USER,
