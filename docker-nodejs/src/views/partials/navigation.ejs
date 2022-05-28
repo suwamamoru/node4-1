@@ -4,13 +4,13 @@
     <a href="">みんなの投稿</a>
     <a href="">投稿を作成</a>
     <% if(loggedIn) { %>
-      <form action="/user/logout" method="post">
+      <form action="/auth/logout" method="post">
         ログインユーザ：<%= currentUser.username %>
         <input type="submit" value="Logout">
       </form>
     <% } else { %>
-      <a href="/user/login">Login</a>
-      <a href="/user/register">Register</a>
+      <a href="/auth/login">Login</a>
+      <a href="/auth/register">Register</a>
     <% } %>
   </header>
 </nav>

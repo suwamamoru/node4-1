@@ -41,7 +41,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // passportの設定を使用
-require('./config/passport')(app);
+require('./middleware/passport')(app);
 
 // ログアウト後、ページが再読み込みされキャッシュされない。
 // その結果、戻るボタンを押してもダッシュボードに戻らない。

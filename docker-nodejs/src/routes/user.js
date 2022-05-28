@@ -3,24 +3,24 @@
 
 const express = require('express'),
       router = express.Router(),
-      usersController = require('../controllers/usersController'),
+      userController = require('../controllers/userController'),
       { registerValidator } = require('../middleware/validator');
 
-router.get('/login', usersController.login);
-router.post('/login', usersController.loginAuthenticate);
-router.get('/register', usersController.register);
+router.get('/login', userController.login);
+router.post('/login', userController.loginAuthenticate);
+router.get('/register', userController.register);
 router.post(
   '/register',
   registerValidator(),
-  usersController.validate,
-  usersController.registerAuthenticate
+  userController.validate,
+  userController.registerAuthenticate
 );
 router.get(
   '/dashboard',
-  usersController.isAuthenticated,
-  usersController.dashboard,
-  usersController.dashboardView
+  userController.isAuthenticated,
+  userController.dashboard,
+  userController.dashboardView
 );
-router.post('/logout', usersController.logout);
+router.post('/logout', userController.logout);
 
 module.exports = router;

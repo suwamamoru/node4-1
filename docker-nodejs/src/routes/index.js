@@ -3,9 +3,9 @@
 const express = require('express'),
       router = express.Router(),
       user = require('./user'),
-      jwt = require('./jwt');
+      auth = require('./auth');
 
-router.use('/user', user);
-router.use('/jwt', jwt);
+router.use('/auth', user);
+router.use('/auth', auth);
 
 module.exports = router;
