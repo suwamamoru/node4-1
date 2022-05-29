@@ -1,0 +1,22 @@
+<%- include('../partials/navigation') %> 
+<form action="/auth/register" method="post">
+  <div>
+    <label>name</label>
+    <input type="text" name="username" required>
+  </div>
+  <div>
+    <label>email</label>
+    <input type="text" name="email" required>
+  </div>
+  <div>
+    <label>password</label>
+    <input type="text" name="password" required>
+  </div>
+  <div>
+    <label>password confirm</label>
+    <input type="text" name="confirmPassword" required>
+  </div>
+  <div>
+    <input type="submit" value="Register">
+  </div>
+</form>

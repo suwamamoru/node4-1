@@ -7,3 +7,7 @@ $ docker-compose build
 ```
 $ docker-compose up -d
 ```
+# 開発環境のマイグレーション
+```
+$ docker-compose run --rm app npx sequelize-cli db:migrate --env development
+```
